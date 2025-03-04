@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-&7rlnqmu*tnw=r%2j@*6!_r2l4aul+jo&pc0rtdgo8ya@x=0lq
 DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com','caiosouza.pythonanywhere.com']
-
+# na versão free, devemos adicionar no host o your-username.pythonanywhere.com
+# no meu caso, caiosouza.pythonanywhere.com
 
 # Application definition
 
