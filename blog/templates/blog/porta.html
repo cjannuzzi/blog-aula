@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenho de uma Porta</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .porta {
+            width: 200px;
+            height: 400px;
+            background-color: #8B4513; /* Cor de madeira */
+            border: 5px solid #5a2d0c;
+            border-radius: 10px;
+            position: relative;
+        }
+        .maçaneta {
+            width: 20px;
+            height: 20px;
+            background-color: gold;
+            border-radius: 50%;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .detalhes {
+            width: 80%;
+            height: 30%;
+            border: 3px solid #5a2d0c;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="porta">
+        <div class="detalhes"></div>
+        <div class="detalhes"></div>
+        <div class="maçaneta"></div>
+    </div>
+</body>
+</html>

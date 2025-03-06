@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Quarto Frontal</title>
+    <style>
+        body { margin:0; padding:0; display:flex; justify-content:center; align-items:center; min-height:100vh; background:#f0f0f0 }
+        .room { width:800px; height:600px; position:relative; background:#f5f5f5; border-radius:15px; box-shadow:0 10px 30px rgba(0,0,0,0.1); overflow:hidden }
+        .wall { position:absolute; top:0; left:0; width:100%; height:100%; background:#f8f4e3 }
+        .floor { position:absolute; bottom:0; left:0; width:100%; height:25%; background:linear-gradient(90deg,#7a6e66 50%,#6d635c 50%); background-size:100px 20px }
+        .bed { position:absolute; bottom:80px; left:200px; width:380px; height:200px; background:#4a4e69; border-radius:15px; box-shadow:5px 5px 15px rgba(0,0,0,0.05) }
+        .bed::before { content:''; position:absolute; top:-30px; left:30px; width:320px; height:60px; background:#6c7293; border-radius:10px 10px 0 0 }
+        .bed::after { content:''; position:absolute; top:20px; right:-40px; width:40px; height:80px; background:#6c7293; border-radius:0 10px 10px 0 }
+        .wardrobe { position:absolute; top:80px; left:50px; width:150px; height:350px; background:#3a3d4d; border-radius:5px; box-shadow:2px 2px 5px rgba(0,0,0,0.1) }
+        .nightstand { position:absolute; bottom:120px; right:180px; width:100px; height:60px; background:#d8d8d8; border-radius:5px; box-shadow:2px 2px 5px rgba(0,0,0,0.05) }
+        .lamp { position:absolute; bottom:140px; right:220px; width:10px; height:120px; background:#777; border-radius:5px }
+        .lamp::before { content:''; position:absolute; top:-20px; left:-15px; width:40px; height:10px; background:#e0e0e0; border-radius:5px }
+        .lamp::after { content:''; position:absolute; top:-40px; left:-5px; width:20px; height:20px; background:#ffeb99; border-radius:50%; box-shadow:0 0 20px #ffeb99 }
+        .window { position:absolute; top:120px; right:80px; width:200px; height:150px; background:#e0f2f1; border:5px solid #d8d8d8; border-radius:5px; box-shadow:0 0 10px rgba(0,0,0,0.05) }
+        .window::before { content:''; position:absolute; top:10px; left:10px; width:180px; height:130px; background:rgba(255,255,255,0.3); backdrop-filter:blur(5px) }
+    </style>
+</head>
+<body>
+    <div class="room">
+        <div class="wall"></div>
+        <div class="floor"></div>
+        <div class="bed"></div>
+        <div class="wardrobe"></div>
+        <div class="nightstand"></div>
+        <div class="lamp"></div>
+        <div class="window"></div>
+    </div>
+</body>
+</html>
