@@ -16,3 +16,4 @@ def quarto(request):
     return render(request,'blog/quarto-simples.html', {})
 
 
+
